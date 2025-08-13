@@ -20,12 +20,14 @@
     position: absolute; /*absolute porque es el hijo*/
     top: 45%;
     left: 18%;
+    animation: mover 1s linear infinite;
 }
 
 .bloque2{
     position: absolute;
     top: 30.5%;
     left: 50%;
+    animation: regresar 2s linear infinite;
 }
 
 .moneda1{
@@ -51,3 +53,66 @@
     top: 19%;
     left: 55.6%;
 }
+
+
+/* clase para asignar la animacion */
+.saltar{
+    animation: salto 0.6s ease forwards;
+}
+
+.mover{
+     animation: salto 0.6s linear infinite;
+}
+
+.regresar{
+     animation: salto 0.6s linear infinite;
+}
+
+/* animacion moneda desaparece */
+@keyframes salto {
+    0%{transform: translateY(0); opacity: 1;}
+    30%{transform: translateY(-60px);}
+    100%{transform: translateY(0px); opacity: 0;}
+}
+
+@keyframes mover {
+    0%{transform: translateX(0); }
+    30%{transform: translateX(-60px);}
+    100%{transform: translateX(0px); }
+}
+
+@keyframes regresar {
+    0%{transform: translateX(0); }
+    30%{transform: translateX(-60px);}
+    100%{transform: translateX(0px); }
+}
+
+/* Contador monedas y corazones */
+
+    .hud {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+      font-family: 'Arial', sans-serif;
+      font-size: 18px;
+      color: white;
+      z-index: 1000;
+    }
+
+    .hud-item {
+      display: flex;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 5px 10px;
+      border-radius: 8px;
+    }
+
+    .hud-item img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
