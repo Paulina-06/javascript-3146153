@@ -67,3 +67,30 @@ btnAnterior.addEventListener("click", function(){
     }
     mostrarEscena(indice)
 })
+
+//Miniaturas
+miniaturas.forEach((miniatura, i) =>{
+    miniatura.addEventListener("click", function(){
+        mostrarEscena(i)
+    })
+})
+
+const audios = [
+    document.querySelector('#audio-escena1'),
+    document.querySelector('#audio-escena2'),
+    document.querySelector('#audio-escena3')
+]
+
+let audioActivo = null
+document.querySelector(".sound-button").addEventListener("click", function(){
+    if(audioActivo){
+        audioActivo.pause();
+        audioActivo.currentTime = 0;
+        audioActivo = null;
+        this.classList.remove("activo")
+    }else{
+        audioActivo = audios[indice];
+        audioActivo.play();
+        this.classList.add("activo")
+    }
+})
