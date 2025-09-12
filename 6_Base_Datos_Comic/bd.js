@@ -6,6 +6,7 @@ const comic = {
   personajes: ["Alma Serrano", "Dante Reyes", "Niko Calderón", "Vika", "Tania", "Selma"],
   capitulos: [
     {
+        id: 1,
       nombreCap: "Prólogo",
       imgPortada: "assets/chapter_0.png",
       video: "video/cap0.mp4",
@@ -13,6 +14,7 @@ const comic = {
       personajes: ["Sacerdotes Mayas", "Selma"]
     },
     {
+        id: 2,
       nombreCap: "Lo que no se dice",
       imgPortada: "assets/AA77030F-A5F1-4755-97AA-7AF9424E322E.PNG",
       video: "video/cap1.mp4",
@@ -20,6 +22,7 @@ const comic = {
       personajes: ["Alma Serrano", "Niko Calderón", "Vika", "Tania"]
     },
     {
+        id: 3,
       nombreCap: "El dolor se mira",
       imgPortada: "assets/chapter_2.png",
       video: "video/cap2.mp4",
@@ -27,6 +30,7 @@ const comic = {
       personajes: ["Dante Reyes", "Alma Serrano", "Niko Calderón", "Vika"]
     },
     {
+        id: 4,
       nombreCap: "Lo que uno elige",
       imgPortada: "assets/chapter_3.png",
       video: "video/cap3.mp4",
@@ -35,3 +39,5 @@ const comic = {
     }
   ]
 }
+
+
