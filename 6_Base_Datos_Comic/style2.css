@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo-padre{
+    position: relative;
+    width: 100%;
+}
+
+.logo{
+    top: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.logo img{
+    width: 50%;
+}
+
+.s1{
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30rem;
+    left: 20rem
+}
+
+
+.comic-button{
+    width: 35%;
+    height: 60px;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: #864cdab8;
+    COLOR: white;
+    border-radius: 40px;
+}
